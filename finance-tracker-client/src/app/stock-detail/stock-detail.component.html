@@ -1,0 +1,14 @@
+
+<div *ngIf="stock">
+    <h2>{{stock.name}} Details</h2>
+    <div><span>Name: </span>{{stock.name}}</div>
+    <div><span>Qty: </span>{{stock.quantity}}</div>
+    <div><span>Avg.price: </span>{{stock.avgPrice}}</div>
+    <div><span>Invested Amount</span>{{stock.investedAmt}}</div>
+    <div>
+        <label for="stock-quantity">Stock quantity: </label>
+        <input id="stock-quantity" [(ngModel)]="stock.quantity" placeholder="Qty">
+    </div>
+    <button (click)="goBack()">Go back</button>
+    <button (click)="save()">save</button>
+</div>

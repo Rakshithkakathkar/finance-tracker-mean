@@ -1,0 +1,11 @@
+<app-stock-search></app-stock-search>
+<h2>Most invested Stocks</h2>
+<div class="stocks-menu">
+    <a *ngFor="let stock of stocks"
+        routerLink="/detail/{{stock._id}}">
+        {{stock.name}} 
+        <div>
+            Rs.{{(stock.investedAmt)}}
+        </div>
+    </a>
+</div>

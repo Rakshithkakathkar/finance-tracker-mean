@@ -1,0 +1,115 @@
+/* HeroesComponent's private CSS styles */
+.stocks {
+    margin: 0 0 2em 0;
+    list-style-type: none;
+    padding: 0;
+    width: 17em;
+  }
+  .stocks li {
+    cursor: pointer;
+    position: relative;
+    left: 0;
+    margin: .5em;
+    padding: .3em 0;
+    height: 1.6em;
+    border-radius: 4px;
+  }
+  .stocks li:hover {
+    color: #2c3a41;
+    left: .1em;
+  }
+
+  .stocks a {
+    color: #333;
+    text-decoration: none;
+    background-color: #EEE;
+    margin: .5em;
+    padding: .3em 0;
+    height: 1.6em;
+    border-radius: 4px;
+    display: block;
+    width: 100%;
+  }
+  
+  .stocks a:hover {
+    color: #2c3a41;
+    background-color: #e6e6e6;
+  }
+  
+  .stocks a:active {
+    background-color: #525252;
+    color: #fafafa;
+  }
+  .stocks li.selected {
+    background-color: black;
+    color: white;
+  }
+  .stocks li.selected:hover {
+    background-color: #505050;
+    color: white;
+  }
+  .stocks li.selected:active {
+    background-color: black;
+    color: white;
+  }
+  .stocks .badge {
+    display: inline-block;
+    font-size: small;
+    color: white;
+    padding: 0.8em 0.7em 0 0.7em;
+    background-color:#1f7ae0;;
+    line-height: 1em;
+    position: relative;
+    left: -1px;
+    top: -4px;
+    height: 1.8em;
+    margin-right: .8em;
+    border-radius: 4px 0 0 4px;
+    min-width: 100px;
+  }
+  
+  input {
+    padding: .5rem;
+  }
+
+  .add-button {
+    padding: .5rem 1.5rem;
+    font-size: 1rem;
+    margin-bottom: 2rem;
+   }
+
+  .add-button:hover {
+    color: white;
+    background-color: #42545C;
+  }
+  
+  button.delete {
+    position: absolute;
+    left: 210px;
+    top: 18px;
+    background-color: white;
+    color:  #525252;
+    padding: 1px 10px 3px 10px;
+  }
+  
+  button.delete:hover {
+    background-color: #525252;
+    color: white;
+  }
+
+  .input-container{
+    display: flex;
+    margin: 10px 0px;
+  }
+
+  .label-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .add-stock {
+    display: flex;
+    flex-direction: column;
+  }
+
